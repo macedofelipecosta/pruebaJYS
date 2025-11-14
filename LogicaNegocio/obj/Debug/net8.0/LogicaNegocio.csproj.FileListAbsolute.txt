@@ -1,0 +1,12 @@
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\bin\Debug\net8.0\LogicaNegocio.deps.json
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\bin\Debug\net8.0\LogicaNegocio.dll
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\bin\Debug\net8.0\LogicaNegocio.pdb
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.AssemblyInfoInputs.cache
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.AssemblyInfo.cs
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.sourcelink.json
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.dll
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\obj\Debug\net8.0\refint\LogicaNegocio.dll
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\obj\Debug\net8.0\LogicaNegocio.pdb
+C:\Users\felip\Source\Repos\API-GestionDeSalas-Jaume-Sere\API\LogicaNegocio\obj\Debug\net8.0\ref\LogicaNegocio.dll
