@@ -37,12 +37,16 @@ namespace API_GestionDeSalas_Jaume_Sere.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(ReservationDTO), 201)]
         [ProducesResponseType(400)]
-        public ActionResult<ReservationDTO> Create([FromBody] ReservationDTO reservationDto)
+        public async Task<ActionResult<ReservationDTO>> Create([FromBody] ReservationDTO reservationDto, CancellationToken cancellationToken)
         {
             try
             {
-                var created = _reservationService.Create(reservationDto);
-                return CreatedAtAction(nameof(GetReservationById), new { id = created.Id }, created);
+                var created = await _reservationService.CreateAsync(reservationDto, cancellationToken);
+
+                return CreatedAtAction(
+                    nameof(GetReservationById),
+                    new { id = created.Id }, created
+                    );
             }
             catch (Exception ex)
             {

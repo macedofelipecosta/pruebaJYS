@@ -10,14 +10,15 @@ namespace LogicaNegocio.Dominio.Reservations
         public DateTime StartDate { get; private set; }
         public DateTime EndDate { get; private set; }
         public int RoomId { get; private set; }
-        public Room Room { get; private set; } = null!;
+        public Room Room { get; private set; } = null!; //ToDo: Debería ser solo el Id para desacoplar?
         public int ReservationStatusId { get; private set; }
         public ReservationStatus Status { get; private set; } = null!; // Pending, Confirmed, Cancelled
         public int CreatedByUserId { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public string Subject { get; private set; } = string.Empty;
         public string Description { get; private set; } = string.Empty;
-        public int OutlookEventId { get; private set; }
+        public ICollection<ReservationParticipant> Participants { get; private set; } = new List<ReservationParticipant>();
+        public int OutlookEventId { get; private set; } //ToDo: Esto para que era?
         public DateTime CancelledAt { get; private set; }
         public TimeSpan Duration => EndDate - StartDate;
         public bool Extended { get; private set; }
@@ -116,6 +117,12 @@ namespace LogicaNegocio.Dominio.Reservations
             {
                 throw new InvalidOperationException("El Id del evento de Outlook no puede ser negativo o 0.");
             }
+        }
+
+        public void AddParticipant(int userId)
+        {
+
+            this.Participants.Add(new ReservationParticipant(userId, CreatedByUserId==userId? true : false));
         }
     }
 }

@@ -4,7 +4,7 @@ using LogicaAplicacion.ServiceInterfaces;
 using LogicaNegocio.Dominio.Notifications;
 using LogicaNegocio.Dominio.Reservations;
 using LogicaNegocio.InterfacesRepositorios;
-
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json;
 
 namespace LogicaAplicacion.Services
@@ -29,53 +29,55 @@ namespace LogicaAplicacion.Services
         }
 
         // Si querés dejar el Create sync, podés simplemente llamar al async:
-        //public ReservationDTO Create(ReservationDTO objDto)
-        //{
-        //    // en ASP.NET lo ideal es solo async, pero te lo dejo simple
-        //    return CreateAsync(objDto, CancellationToken.None)
-        //        .GetAwaiter()
-        //        .GetResult();
-        //}
-
-        public async Task<ReservationDTO> CreateAsync(
-            ReservationDTO dto,
-            CancellationToken cancellationToken)
+        public ReservationDTO Create(ReservationDTO objDto)
         {
-            // 1) Mapear y validar
+            throw new NotImplementedException();
+        }
+
+        public async Task<ReservationDTO> CreateAsync(ReservationDTO dto, CancellationToken cancellationToken)
+        {
+            //Mapear DTO -> entidad dominio
             var reservation = _mapper.Map<Reservation>(dto);
+            foreach (var userId in dto.UsersToNotifyId)
+            {
+                reservation.AddParticipant(userId); // método de dominio que crea ReservationParticipant
+            }
+            //Validar dominio
             reservation.Validate();
 
-            // 2) Agregar la reserva al repositorio (NO doble Add)
+            //Guardar reserva en repositorio
             await _repo.AddAsync(reservation, cancellationToken);
 
-            // 3) Crear el domain event (ya lo tenés en tu dominio)
-            var evt = new ReservationCreatedDomainEvent(
-                reservation.Id,
-                reservation.RoomId,
-                reservation.CreatedByUserId,
-                reservation.StartDate,
-                reservation.EndDate,
-                reservation.Subject,
-                reservation.Description
-            // agrega lo que pida tu constructor real
-            );
-
-            // 4) Crear un registro de Outbox
-            var outboxMessage = new OutboxMessage
+            //Armar el evento para la cola (outbox) con un objeto anonimo (lo que necesitará el sistema de notificación)
+            var notificationEvent = new
             {
-                Type = nameof(ReservationCreatedDomainEvent),
-                Payload = JsonSerializer.Serialize(evt),
-                OccurredOn = DateTime.UtcNow
+                ReservationId = reservation.Id,
+                RoomId = reservation.RoomId,
+                StartDate = reservation.StartDate,
+                EndDate = reservation.EndDate,
+                Subject = reservation.Subject,
+                Description = reservation.Description,
+                Duration = reservation.Duration,
+                UsersToNotify = "macedofelipecosta@gmail.com" // aca paso solo un email pero hay que ver el dto para que llegue una lista con emails
+                //UsersToNotify = reservation.UsersToNotifyId
             };
 
+            var payloadJson = JsonSerializer.Serialize(notificationEvent);
+
+            var outboxMessage = new OutboxMessage(
+                type: "ReservationCreated",
+                payload: payloadJson,
+                occurredOn: DateTime.UtcNow
+            );
+
+            //Guardar en Outbox
             await _outboxRepository.AddAsync(outboxMessage, cancellationToken);
 
-            // 5) Confirmar TODO junto (reserva + outbox) en una sola transacción
+            //Confirmar todo en una sola transacción
             await _unitOfWork.SaveChangesAsync(cancellationToken);
 
-            // 6) Devolver DTO
-            dto.Id = reservation.Id;
-            return dto;
+            //Devolver DTO (mapeando si querés incluir el Id generado)
+            return _mapper.Map<ReservationDTO>(reservation);
         }
 
         public ReservationDTO FindById(int id)

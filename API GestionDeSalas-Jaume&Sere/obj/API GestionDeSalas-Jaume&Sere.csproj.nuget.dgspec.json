@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\API GestionDeSalas-Jaume&Sere\\API GestionDeSalas-Jaume&Sere.csproj": {}
+    "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\API GestionDeSalas-Jaume&Sere\\API GestionDeSalas-Jaume&Sere.csproj": {}
   },
   "projects": {
-    "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\API GestionDeSalas-Jaume&Sere\\API GestionDeSalas-Jaume&Sere.csproj": {
+    "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\API GestionDeSalas-Jaume&Sere\\API GestionDeSalas-Jaume&Sere.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\API GestionDeSalas-Jaume&Sere\\API GestionDeSalas-Jaume&Sere.csproj",
+        "projectUniqueName": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\API GestionDeSalas-Jaume&Sere\\API GestionDeSalas-Jaume&Sere.csproj",
         "projectName": "API GestionDeSalas-Jaume&Sere",
-        "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\API GestionDeSalas-Jaume&Sere\\API GestionDeSalas-Jaume&Sere.csproj",
-        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\API GestionDeSalas-Jaume&Sere\\obj\\",
+        "projectPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\API GestionDeSalas-Jaume&Sere\\API GestionDeSalas-Jaume&Sere.csproj",
+        "packagesPath": "C:\\Users\\fmace\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\API GestionDeSalas-Jaume&Sere\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fmace\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,11 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj": {
-                "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj"
-              },
-              "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\Infrastructure.csproj"
+              "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj": {
+                "projectPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj"
               }
             }
           }
@@ -116,24 +113,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\DTOs.csproj": {
+    "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\DTOs.csproj",
+        "projectUniqueName": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\DTOs.csproj",
         "projectName": "DTOs",
-        "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\DTOs.csproj",
-        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\obj\\",
+        "projectPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\DTOs.csproj",
+        "packagesPath": "C:\\Users\\fmace\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fmace\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -149,8 +146,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj": {
-                "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj"
+              "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj": {
+                "projectPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj"
               }
             }
           }
@@ -192,24 +189,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj": {
+    "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj",
         "projectName": "LogicaAplicacion",
-        "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj",
-        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\obj\\",
+        "projectPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj",
+        "packagesPath": "C:\\Users\\fmace\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fmace\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -225,11 +222,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\DTOs.csproj"
+              "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\DTOs\\DTOs.csproj"
               },
-              "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj": {
-                "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj"
+              "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\LogicaDatos.csproj": {
+                "projectPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\LogicaDatos.csproj"
+              },
+              "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj": {
+                "projectPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj"
               }
             }
           }
@@ -271,24 +271,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\Infrastructure.csproj": {
+    "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\LogicaDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\Infrastructure.csproj",
-        "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\obj\\",
+        "projectUniqueName": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\LogicaDatos.csproj",
+        "projectName": "LogicaDatos",
+        "projectPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\LogicaDatos.csproj",
+        "packagesPath": "C:\\Users\\fmace\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaDatos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fmace\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -304,11 +304,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj": {
-                "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaAplicacion\\LogicaAplicacion.csproj"
-              },
-              "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj": {
-                "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj"
+              "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj": {
+                "projectPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj"
               }
             }
           }
@@ -352,18 +349,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.10, )"
-            },
-            "Microsoft.Extensions.Hosting": {
-              "target": "Package",
-              "version": "[10.0.0, )"
-            },
-            "Microsoft.Extensions.Hosting.Abstractions": {
-              "target": "Package",
-              "version": "[10.0.0, )"
-            },
-            "StackExchange.Redis": {
-              "target": "Package",
-              "version": "[2.9.32, )"
             }
           },
           "imports": [
@@ -382,24 +367,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj": {
+    "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj",
+        "projectUniqueName": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj",
         "projectName": "LogicaNegocio",
-        "projectPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj",
-        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felip\\Source\\Repos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\obj\\",
+        "projectPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\LogicaNegocio.csproj",
+        "packagesPath": "C:\\Users\\fmace\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fmace\\OneDrive\\Documentos\\API-GestionDeSalas-Jaume-Sere\\API\\LogicaNegocio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fmace\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -448,7 +433,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -6,16 +6,23 @@ namespace LogicaNegocio.Dominio.Reservations
     {
         public int Id { get; private set; }
         public int ReservationId { get; private set; }
-        public Reservation Reservation { get; private set; } = null!;
         public int UserId { get; private set; }
-        public Email UserEmail { get; private set; } = null!;
         public bool IsOrganizer { get; private set; }
         public DateTime InvitationDate { get; private set; }
-        public int ParticipantStatusId { get; private set; }
-        public ParticipantStatus ParticipantStatus { get; private set; } = null!;//Pending, Accepted, Declined
+        public int ParticipantStatusId { get; private set; } //El participante debía confirmar la reserva o solo se lo invitaba?
+        public ParticipantStatus ParticipantStatus { get; private set; } = null!;//ToDo: Pending, Accepted, Declined ??Necesario 
+     
+        
+        
         private ReservationParticipant()
         {
             //Para EF
+        }
+        public ReservationParticipant(int userId, bool isOrganizer)
+        {
+            UserId = userId;
+            IsOrganizer = isOrganizer;
+            InvitationDate = DateTime.UtcNow;
         }
     }
 }

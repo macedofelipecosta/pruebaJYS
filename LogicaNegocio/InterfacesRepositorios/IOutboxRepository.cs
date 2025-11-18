@@ -10,6 +10,7 @@ namespace LogicaNegocio.InterfacesRepositorios
 {
     public interface IOutboxRepository
     {
-        Task AddAsync(OutboxMessage message, CancellationToken ct = default);
+        Task AddAsync(OutboxMessage message, CancellationToken cancellationToken = default);
+        Task<List<OutboxMessage>> GetUnprocessedAsync(int maxCount, CancellationToken cancellationToken);
     }
 }

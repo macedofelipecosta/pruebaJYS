@@ -40,9 +40,10 @@ namespace API_GestionDeSalas_Jaume_Sere
             builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
             builder.Services.AddScoped<IReservationService, ReservationService>();
 
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
             //Notificaciones OUTBOX
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddHostedService<OutboxProcessorHostedService>();
             builder.Services.AddScoped<IOutboxRepository, OutboxRepository>();
 

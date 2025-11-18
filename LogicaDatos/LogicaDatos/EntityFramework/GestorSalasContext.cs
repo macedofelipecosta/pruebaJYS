@@ -75,6 +75,21 @@ namespace Infrastructure.Persistence.EntityFramework
                 new Parameter(2, "TiempoMaximoExtension", 60, "Tiempo máximo permitido de extensión de una reserva en minutos"),
                 new Parameter(3, "MaximoDiasAnticipacion", 30, "Días máximos de anticipación para reservar")
             );
+            modelBuilder.Entity<OutboxMessage>(b =>
+            {
+                b.ToTable("OutboxMessages");
+                b.HasKey(x => x.Id);
+
+                b.Property(x => x.Type)
+                    .IsRequired()
+                    .HasMaxLength(200);
+
+                b.Property(x => x.Payload)
+                    .IsRequired();
+
+                b.Property(x => x.OccurredOn)
+                    .IsRequired();
+            });
         }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

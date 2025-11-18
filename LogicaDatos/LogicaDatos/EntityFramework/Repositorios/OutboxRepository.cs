@@ -1,6 +1,7 @@
 ﻿using Infrastructure.Persistence.EntityFramework;
 using LogicaNegocio.Dominio.Notifications;
 using LogicaNegocio.InterfacesRepositorios;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,9 +19,18 @@ namespace Infrastructure.LogicaDatos.EntityFramework.Repositorios
             _context = context;
         }
 
-        public async Task AddAsync(OutboxMessage message, CancellationToken ct = default)
+        public Task AddAsync(OutboxMessage message, CancellationToken cancellationToken = default)
         {
-            await _context.OutboxMessages.AddAsync(message, ct);
+            return _context.OutboxMessages.AddAsync(message, cancellationToken).AsTask();
+        }
+
+        public Task<List<OutboxMessage>> GetUnprocessedAsync(int maxCount, CancellationToken cancellationToken)
+        {
+            return _context.OutboxMessages
+                .Where(x => !x.ProcessedOn.HasValue)
+                .OrderBy(x => x.OccurredOn)
+                .Take(maxCount)
+                .ToListAsync(cancellationToken);
         }
     }
 }
