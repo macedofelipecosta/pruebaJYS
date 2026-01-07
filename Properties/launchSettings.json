@@ -1,0 +1,53 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:30645",
+      "sslPort": 44308
+    }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "LDAP_URL": "ldaps://ldap.jumpcloud.com:636",
+        "LDAP_BASE_DN": "o=6938a93d4964f5f16db04c5d,dc=jumpcloud,dc=com",
+        "LDAP_BIND_DN": "uid=Admin,ou=Users,o=6938a93d4964f5f16db04c5d,dc=jumpcloud,dc=com",
+        "LDAP_BIND_PASSWORD": "ContraseñaSegura1234"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7020;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "LDAP_URL": "ldaps://ldap.jumpcloud.com:636",
+        "LDAP_BASE_DN": "o=6938a93d4964f5f16db04c5d,dc=jumpcloud,dc=com",
+        "LDAP_BIND_DN": "uid=Admin,ou=Users,o=6938a93d4964f5f16db04c5d,dc=jumpcloud,dc=com",
+        "LDAP_BIND_PASSWORD": "ContraseñaSegura1234"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "LDAP_URL": "ldaps://ldap.jumpcloud.com:636",
+        "LDAP_BASE_DN": "o=6938a93d4964f5f16db04c5d,dc=jumpcloud,dc=com",
+        "LDAP_BIND_DN": "uid=Admin,ou=Users,o=6938a93d4964f5f16db04c5d,dc=jumpcloud,dc=com",
+        "LDAP_BIND_PASSWORD": "ContraseñaSegura1234"
+      }
+    }
+  }
+}
